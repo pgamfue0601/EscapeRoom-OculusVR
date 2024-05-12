@@ -4,7 +4,13 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/EscapeScene.unity
+    guid: c95362a919943374f8de9be2241ab069
+  - enabled: 1
+    path: Assets/Scenes/EndScene.unity
+    guid: 53ab1b0f44efec442b9a8accdcb1a157
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: a866d0bb853fba645869c2681940a724, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: cf819021ce3d7a04f8cefbdbf4bef04f, type: 2}

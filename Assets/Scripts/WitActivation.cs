@@ -1,5 +1,6 @@
 using Meta.WitAi;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class WitActivation : MonoBehaviour
 {
@@ -10,9 +11,9 @@ public class WitActivation : MonoBehaviour
         if (!wit) wit = GetComponent<Wit>();
     }
 
-    void Update()
+    public void ButtonActivate(InputAction.CallbackContext context)
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (context.performed)
         {
             wit.Activate();
         }
