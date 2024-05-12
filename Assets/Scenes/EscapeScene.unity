@@ -18623,6 +18623,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1493671947}
   - component: {fileID: 1493671946}
+  - component: {fileID: 1493671952}
   - component: {fileID: 1493671951}
   m_Layer: 0
   m_Name: Wit
@@ -18770,7 +18771,7 @@ MonoBehaviour:
   intent: open_door
   confidenceThreshold: 0.6
   valueMatchers:
-  - path: entities.action:action[0].type
+  - path: entities.action:action[0].value
     witValueReference: {fileID: 0}
     contentRequired: 1
     matchMethod: 0
@@ -18779,25 +18780,7 @@ MonoBehaviour:
     floatingPointComparisonTolerance: 0.00009999999747378752
     allowConfidenceOverlap: 0
     confidenceRanges: []
-  - path: entities.object:object[0].confidence
-    witValueReference: {fileID: 0}
-    contentRequired: 1
-    matchMethod: 0
-    comparisonMethod: 0
-    matchValue: 
-    floatingPointComparisonTolerance: 0.00009999999747378752
-    allowConfidenceOverlap: 0
-    confidenceRanges: []
-  - path: intents[0].id
-    witValueReference: {fileID: 0}
-    contentRequired: 1
-    matchMethod: 0
-    comparisonMethod: 0
-    matchValue: 
-    floatingPointComparisonTolerance: 0.00009999999747378752
-    allowConfidenceOverlap: 0
-    confidenceRanges: []
-  - path: X-Wit-Client-Request-Id
+  - path: entities.object:object[0].value
     witValueReference: {fileID: 0}
     contentRequired: 1
     matchMethod: 0
@@ -18824,10 +18807,35 @@ MonoBehaviour:
         m_CallState: 2
   onDidNotMatch:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1970774018}
+        m_TargetAssemblyTypeName: DoorController, Assembly-CSharp
+        m_MethodName: OpenDoorSecond
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onOutOfDomain:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &1493671952
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1493671945}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25a8012a779157a43933d4660eb9b4e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wit: {fileID: 1493671946}
 --- !u!1001 &1496483001
 PrefabInstance:
   m_ObjectHideFlags: 0

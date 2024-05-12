@@ -19,10 +19,10 @@ MonoBehaviour:
     lang: es
     isPrivate: 0
     createdAt: 2024-05-11T04:35:45-0700
-    trainingStatus: 3
-    lastTrainDuration: 67
-    lastTrainedAt: 2024-05-12T04:07:05-0700
-    nextTrainAt: 2024-05-12T04:36:26-0700
+    trainingStatus: 1
+    lastTrainDuration: 51
+    lastTrainedAt: 2024-05-12T05:05:35-0700
+    nextTrainAt: 2024-05-12T05:04:44-0700
     intents:
     - id: 889218752972700
       name: open_door
@@ -579,13 +579,13 @@ MonoBehaviour:
     _event: 
     _converse: 
   isDemoOnly: 0
-  useConduit: 1
+  useConduit: 0
   _manifestLocalPath: ConduitManifest-89b3255c-ad54-4ab3-b182-ed08519bd04a.json
   excludedAssemblies:
   - Oculus.Voice.Demo, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
   - Meta.WitAi.Samples, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
   relaxedResolution: 0
-  _lastRefreshSeconds: 1715513826.4012604
+  _lastRefreshSeconds: 1715515651.0697994
 --- !u!114 &3484552452044469034
 MonoBehaviour:
   m_ObjectHideFlags: 0

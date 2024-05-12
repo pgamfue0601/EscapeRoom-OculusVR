@@ -10,8 +10,11 @@ public class WitActivation : MonoBehaviour
         if (!wit) wit = GetComponent<Wit>();
     }
 
-    void Start()
+    void Update()
     {
-        wit.Activate();
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            wit.Activate();
+        }
     }
 }
